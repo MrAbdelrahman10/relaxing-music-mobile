@@ -1,0 +1,7 @@
+{
+  "name": "relaxing-music-mobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

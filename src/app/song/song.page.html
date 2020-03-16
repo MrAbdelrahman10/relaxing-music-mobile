@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      {{ song && song.name }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ song && song.name }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card *ngIf="song">
+    <ion-card-header>
+      <ion-card-title>{{ song.category_name }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <audio controls>
+        <source src="{{ song.file_path }}" type="audio/mpeg">
+      </audio>
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Library
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Library</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card [routerLink]="'/tabs/songs/' + i.id + '/category'" *ngFor="let i of categories">
+    <ion-card-header>
+      <ion-card-title>{{ i.name }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <img src="{{ i.background_image }}" />
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

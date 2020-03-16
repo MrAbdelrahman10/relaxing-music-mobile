@@ -1,0 +1,8 @@
+{
+  "appId": "com.relaxing.music",
+  "appName": "Relaxing Music",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}
