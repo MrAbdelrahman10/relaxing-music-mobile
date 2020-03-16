@@ -19,7 +19,11 @@
     </ion-card-header>
 
     <ion-card-content>
-      <audio controls>
+      <ion-icon (click)="removeFavorite(i)" name="heart" size="large" class="ion-float-end">
+      </ion-icon>
+      <ion-icon (click)="play(i)" name="play" id="player" size="large" class="ion-float-end">
+      </ion-icon>
+      <audio [hidden]="true">
         <source src="{{ song.file_path }}" type="audio/mpeg">
       </audio>
     </ion-card-content>

@@ -20,4 +20,13 @@ export class SongPage implements OnInit {
     });
   }
 
+  play_pause(id){
+    var myAudio = document.getElementById("player");
+  if (myAudio.paused) {
+    myAudio.play();
+  } else {
+    myAudio.pause();
+  }
+  }
+
 }
